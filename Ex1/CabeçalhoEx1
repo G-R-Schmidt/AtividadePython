@@ -1,0 +1,11 @@
+Explicação da Estratégia:
+
+Este código implementa um jogo da velha 4x4 em Python, onde dois jogadores (X e O) competem para formar uma linha ou coluna completa no tabuleiro. A estratégia envolve a criação de funções para imprimir o tabuleiro, verificar o estado do jogo (vitória ou empate) e gerenciar a lógica do jogo. Os jogadores alternam fazendo suas jogadas até que um jogador vença ou ocorra um empate.
+
+Detalhamento das Estruturas Usadas:
+
+    print_board(board): Esta função recebe o tabuleiro atual como argumento e imprime-o na tela. Utiliza loops for para percorrer cada linha do tabuleiro, formatando as células com barras verticais e linhas horizontais para criar a grade 4x4.
+
+    check_winner(board, player): Esta função verifica o estado do jogo para determinar se um jogador venceu. Ela analisa as linhas, colunas e diagonais do tabuleiro para verificar se um jogador preencheu todas as células em uma dessas direções. Retorna True se um jogador venceu e False caso contrário.
+
+    main(): Esta é a função principal que executa o jogo. Ela inicializa o tabuleiro vazio, define o jogador atual como "X" e inicia um loop que permite aos jogadores fazerem suas jogadas. O tabuleiro é atualizado após cada jogada, e a função check_winner() é chamada para verificar se um jogador venceu. O jogo continua até que um jogador vença ou ocorra um empate (todas as células são preenchidas).
