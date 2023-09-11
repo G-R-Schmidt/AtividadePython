@@ -1,0 +1,11 @@
+Explicação da Estratégia:
+
+Este código implementa um jogo da velha em Python. A estratégia envolve a criação de funções para exibir o tabuleiro, verificar se há um vencedor e gerenciar a lógica do jogo. Os jogadores (X e O) alternam, fazendo jogadas em um tabuleiro de tamanho variável definido pelo usuário. O jogo continua até que um jogador vença ou ocorra um empate.
+
+Detalhamento das Estruturas Usadas:
+
+    exibir_tabuleiro(tabuleiro): Esta função recebe o tabuleiro atual como argumento e exibe-o na tela. Ela usa loops for para percorrer cada linha do tabuleiro e exibir as células separadas por barras verticais. O tamanho do tabuleiro é usado para calcular a quantidade correta de caracteres de separação.
+
+    verificar_vencedor(tabuleiro, jogador): Esta função verifica se há um vencedor no jogo. Ela analisa as linhas, colunas e diagonais do tabuleiro para determinar se um jogador preencheu todas as células em uma dessas direções. Ela retorna True se um jogador venceu e False caso contrário.
+
+    jogo_da_velha(): Esta é a função principal que executa o jogo. Ela começa solicitando ao usuário o tamanho do tabuleiro (NxN). O jogo prossegue com os jogadores alternando e fazendo suas jogadas. O tabuleiro é atualizado após cada jogada e o jogo verifica se há um vencedor usando a função verificar_vencedor(). O jogo continua até que um jogador vença ou ocorra um empate.
