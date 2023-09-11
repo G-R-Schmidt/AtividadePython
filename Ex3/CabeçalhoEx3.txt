@@ -1,0 +1,13 @@
+Explicação da Estratégia:
+
+Este código implementa um jogo de adivinhação de palavras em Python. A estratégia envolve a seleção aleatória de uma palavra de um arquivo de palavras, ocultação das letras da palavra e permitir que o jogador adivinhe as letras. O jogador tem um número limitado de tentativas para adivinhar a palavra ou letras corretas.
+
+Detalhamento das Estruturas Usadas:
+
+    random: É um módulo que permite gerar números aleatórios. É usado para escolher uma palavra aleatória do arquivo de palavras.
+
+    escolher_palavra(): Esta função lê um arquivo chamado "lista_palavras.txt" que contém uma lista de palavras, seleciona uma palavra aleatória, remove espaços em branco e converte todas as letras para minúsculas. Essa palavra é então retornada para ser adivinhada no jogo.
+
+    jogo_adivinhacao(): Esta é a função principal do jogo. Ela começa escolhendo uma palavra aleatória usando a função escolher_palavra(). O jogo prossegue com o jogador tentando adivinhar a palavra ou letras corretas. O jogador tem um número limitado de tentativas (6 no exemplo). O progresso do jogo é exibido na tela, incluindo a palavra parcialmente revelada, letras usadas e tentativas restantes. O jogo continua até que o jogador adivinhe a palavra ou use todas as tentativas.
+
+    Estruturas de controle: O código utiliza loops while para controlar o fluxo do jogo, permitindo que ele continue até que o jogador vença ou perca. Também utiliza estruturas condicionais if e for para verificar se a letra adivinhada está correta, se já foi usada ou se é uma entrada válida.
