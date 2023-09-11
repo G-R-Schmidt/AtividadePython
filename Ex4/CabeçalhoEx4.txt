@@ -1,0 +1,13 @@
+Estratégia:
+
+Neste código, implementamos um "banco de dados" de dicionários em Python, que permite aos usuários cadastrar registros de usuários com campos obrigatórios e opcionais, além de imprimir esses registros com várias opções de filtragem. O programa começa solicitando ao usuário os nomes dos campos obrigatórios para os cadastros e, em seguida, exibe um menu com três opções: cadastrar usuário, imprimir usuários ou encerrar o programa.
+
+Detalhamento das Estruturas Usadas:
+
+    banco_usuarios: Uma lista global que armazena os dicionários de usuários cadastrados.
+
+    cadastrar_usuario(campos_obrigatorios): Uma função que permite ao usuário cadastrar um novo usuário de maneira flexível. Ela recebe uma tupla com os campos obrigatórios para cadastro e solicita dados para esses campos, bem como campos opcionais, até que o usuário digite "sair". Os dados são armazenados em um dicionário e adicionados à lista banco_usuarios.
+
+    imprimir_usuarios(*args, **kwargs): Uma função que imprime os registros de usuários com várias opções de filtragem. Ela exibe um menu com quatro opções: imprimir todos os usuários, filtrar por nomes, filtrar por campos ou filtrar por nomes e campos. Com base na escolha do usuário, a função filtra e imprime os registros de acordo com os critérios fornecidos.
+
+    main(): A função principal que inicia o programa. Ela solicita ao usuário os campos obrigatórios para os cadastros, exibe um menu com opções para cadastrar usuário, imprimir usuários ou encerrar o programa e executa as funções correspondentes com base na escolha do usuário.
